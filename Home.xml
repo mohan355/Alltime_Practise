@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="USA">
+
+<listeners>
+<listener class-name="TestListener.ITestListner"></listener>
+</listeners>
+
+<test name="Maryland">
+<parameter name="url" value="https://www.capitalone.com/"></parameter>
+<parameter name="browser" value="chrome"></parameter>
+<classes>
+  <class name="Testdeta.TestdetaProvider"></class>
+<!--<class name="Testdeta.Trydetap"></class>--> 
+
+</classes>
+</test>
+ 
+<test name="Baltimore">
+<parameter name="url" value="https://www.capitalone.com/"></parameter>
+<parameter name="browser" value="firefox"></parameter>
+<classes>
+ <class name="Testdeta.TestdetaProvider"></class>
+<!--<class name="Testdeta.Trydetap"></class>-->
+
+</classes>
+</test>
+
+<test name="Ellicott">
+<parameter name="url" value="https://www.capitalone.com/"></parameter>
+<parameter name="browser" value="chrome"></parameter>
+<classes>
+<class name="dailyhome.Summary"></class> 
+</classes>
+</test>
+ 
+<test name="columbia">
+<parameter name="url" value="https://www.capitalone.com/"></parameter>
+<parameter name="browser" value="firefox"></parameter>
+<classes>
+<class name="dailyhome.Summary"></class>
+</classes>
+</test>
+
+</suite>
