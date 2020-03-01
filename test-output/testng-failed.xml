@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [USA]">
+  <listeners>
+    <listener class-name="TestListener.ITestListner"/>
+  </listeners>
+  <test thread-count="5" name="Maryland(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.capitalone.com/"/>
+    <classes>
+      <class name="Testdeta.TestdetaProvider">
+        <methods>
+          <include name="afterClass"/>
+          <include name="f" invocation-numbers="0 1"/>
+          <include name="BeforeClass"/>
+        </methods>
+      </class> <!-- Testdeta.TestdetaProvider -->
+    </classes>
+  </test> <!-- Maryland(failed) -->
+  <test thread-count="5" name="Baltimore(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="https://www.capitalone.com/"/>
+    <classes>
+      <class name="Testdeta.TestdetaProvider">
+        <methods>
+          <include name="afterClass"/>
+          <include name="f" invocation-numbers="0 1"/>
+          <include name="BeforeClass"/>
+        </methods>
+      </class> <!-- Testdeta.TestdetaProvider -->
+    </classes>
+  </test> <!-- Baltimore(failed) -->
+</suite> <!-- Failed suite [USA] -->

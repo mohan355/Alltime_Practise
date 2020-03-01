@@ -28,9 +28,11 @@ public class TestdetaProvider extends Bbrowsers{
 		 obj2.kafle(n);
 		 obj2.shanti(s);
 		 obj2.sachhem();
+		 driver.navigate().back();
 		 
 		 driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
 		 driver.navigate().back();
+		 
 		 obj2.emty();
 		 driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
 		 Reporter.log("Ececuted successfully");

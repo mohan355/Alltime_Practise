@@ -47,6 +47,7 @@ public class Bbrowsers {
   
   @AfterClass
   public void afterClass() {
+	  driver.close();
 	  
 	  
 	   }
